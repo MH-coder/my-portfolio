@@ -39,7 +39,7 @@ const About = ({ pageInfo }: Props) => {
 
         <div className="pl-0 md:pl-10 mt-6 sm:mt-0 ">
           <h4 className="text-2xl md:text-3xl xl:text-4xl font-semibold mb-5 sm:mb-10">
-            Here's a{" "}
+            Heres a{" "}
             <span className="underline decoration-[#F7AB0A]">little</span>{" "}
             background
           </h4>
