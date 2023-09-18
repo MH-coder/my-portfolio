@@ -16,6 +16,7 @@ const Skill = ({ directionLeft, skill }: Props) => {
     <div className="group relative flex cursor-pointer">
       <img
         src={urlFor(skill?.image).url()}
+        loading="eager"
         // initial={{
         //   // x: directionLeft ? -200 : 200,
         //   opacity: 0,

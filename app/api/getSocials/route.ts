@@ -6,10 +6,6 @@ const query = groq`
     *[_type == "social"]
 `;
 
-type Data = {
-  socials: Social[];
-};
-
 export const GET = async () => {
   try {
     const socials: Social[] = await sanityClient.fetch(query);

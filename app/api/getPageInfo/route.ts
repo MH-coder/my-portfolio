@@ -6,10 +6,6 @@ const query = groq`
     *[_type == "pageInfo"][0]
 `;
 
-type Data = {
-  pageInfo: PageInfo[];
-};
-
 export const GET = async () => {
   try {
     const pageInfo: PageInfo[] = await sanityClient.fetch(query);

@@ -1,4 +1,3 @@
-import type { NextApiRequest, NextApiResponse } from "next";
 import { groq } from "next-sanity";
 import { sanityClient } from "@/sanity";
 import { Project } from "@/typings";
@@ -9,10 +8,6 @@ const query = groq`
         technologies[]->
     }
 `;
-
-type Data = {
-  projects: Project[];
-};
 
 export const GET = async () => {
   try {
